@@ -1,0 +1,948 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* Tetris2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Tetris2AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		F86E0D7C1755E18C00EF667A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F86E0D7B1755E18C00EF667A /* Default-568h@2x.png */; };
+		F878692E12220334009681B2 /* Tetris1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FAB112D46F200C803AC /* Tetris1.m */; };
+		F878693B1222048B009681B2 /* ShapeGroup1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA5112D46F200C803AC /* ShapeGroup1.m */; };
+		F878693E1222049B009681B2 /* Shape1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA7112D46F200C803AC /* Shape1.m */; };
+		F8786940122204A3009681B2 /* GameState1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA9112D46F200C803AC /* GameState1.m */; };
+		F8786942122204B3009681B2 /* Board1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA3112D46F200C803AC /* Board1.m */; };
+		F878DAA51220B40D00DF7522 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		F878DAA61220B40D00DF7522 /* TetrisViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B65E6B112D4F40007F1356 /* TetrisViewController1.xib */; };
+		F878DAA71220B40D00DF7522 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B65E7E112D518E007F1356 /* SettingsView.xib */; };
+		F878DAA81220B40D00DF7522 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B65E80112D51AC007F1356 /* SplashView.xib */; };
+		F878DAA91220B40D00DF7522 /* tileDefault_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBA112D543A007F1356 /* tileDefault_14x14.png */; };
+		F878DAAA1220B40D00DF7522 /* tileGreen_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBB112D543A007F1356 /* tileGreen_14x14.png */; };
+		F878DAAB1220B40D00DF7522 /* scratch1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBC112D543A007F1356 /* scratch1.wav */; };
+		F878DAAC1220B40D00DF7522 /* tileBlue_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBD112D543A007F1356 /* tileBlue_14x14.png */; };
+		F878DAAD1220B40D00DF7522 /* arrow_up1_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBE112D543A007F1356 /* arrow_up1_50_30.png */; };
+		F878DAAE1220B40D00DF7522 /* tileIron_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBF112D543A007F1356 /* tileIron_25x25.png */; };
+		F878DAAF1220B40D00DF7522 /* tileGreen_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC0112D543A007F1356 /* tileGreen_25x25.png */; };
+		F878DAB01220B40D00DF7522 /* tileCayenne_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC1112D543A007F1356 /* tileCayenne_14x14.png */; };
+		F878DAB11220B40D00DF7522 /* tilePlum_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC2112D543A007F1356 /* tilePlum_25x25.png */; };
+		F878DAB21220B40D00DF7522 /* tileLemon_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC3112D543A007F1356 /* tileLemon_25x25.png */; };
+		F878DAB31220B40D00DF7522 /* arrow_down_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC4112D543A007F1356 /* arrow_down_50_30.png */; };
+		F878DAB41220B40D00DF7522 /* tileDefault_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC5112D543A007F1356 /* tileDefault_25x25.png */; };
+		F878DAB51220B40D00DF7522 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC6112D543A007F1356 /* icon.png */; };
+		F878DAB61220B40D00DF7522 /* arrow_left1_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC7112D543A007F1356 /* arrow_left1_50_30.png */; };
+		F878DAB71220B40D00DF7522 /* arrow_left_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC8112D543A007F1356 /* arrow_left_50_30.png */; };
+		F878DAB81220B40D00DF7522 /* tileLemon_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC9112D543A007F1356 /* tileLemon_14x14.png */; };
+		F878DAB91220B40D00DF7522 /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECA112D543A007F1356 /* tap.aif */; };
+		F878DABA1220B40D00DF7522 /* arrow_right1_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECB112D543A007F1356 /* arrow_right1_50_30.png */; };
+		F878DABB1220B40D00DF7522 /* arrow_down1_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECC112D543A007F1356 /* arrow_down1_50_30.png */; };
+		F878DABC1220B40D00DF7522 /* tileSky_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECD112D543A007F1356 /* tileSky_25x25.png */; };
+		F878DABD1220B40D00DF7522 /* tilePlum_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECE112D543A007F1356 /* tilePlum_14x14.png */; };
+		F878DABE1220B40D00DF7522 /* arrow_right_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECF112D543A007F1356 /* arrow_right_50_30.png */; };
+		F878DABF1220B40D00DF7522 /* tileSky_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED0112D543A007F1356 /* tileSky_14x14.png */; };
+		F878DAC01220B40D00DF7522 /* tileCayenne_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED1112D543A007F1356 /* tileCayenne_25x25.png */; };
+		F878DAC11220B40D00DF7522 /* tileBlue_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED2112D543A007F1356 /* tileBlue_25x25.png */; };
+		F878DAC21220B40D00DF7522 /* semi_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED3112D543A007F1356 /* semi_screen.png */; };
+		F878DAC31220B40D00DF7522 /* arrow_up_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED4112D543A007F1356 /* arrow_up_50_30.png */; };
+		F878DAC41220B40D00DF7522 /* tileIron_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED5112D543A007F1356 /* tileIron_14x14.png */; };
+		F878DAC61220B40D00DF7522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		F878DAC71220B40D00DF7522 /* Tetris2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Tetris2AppDelegate.m */; };
+		F878DAC81220B40D00DF7522 /* TetrisViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F89112D46F200C803AC /* TetrisViewController1.m */; };
+		F878DAC91220B40D00DF7522 /* SettingsViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F8B112D46F200C803AC /* SettingsViewController1.m */; };
+		F878DACA1220B40D00DF7522 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F8E112D46F200C803AC /* MainView.m */; };
+		F878DACB1220B40D00DF7522 /* SplashView1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F94112D46F200C803AC /* SplashView1.m */; };
+		F878DACC1220B40D00DF7522 /* SettingsView1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F96112D46F200C803AC /* SettingsView1.m */; };
+		F878DACD1220B40D00DF7522 /* Board1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA3112D46F200C803AC /* Board1.m */; };
+		F878DACE1220B40D00DF7522 /* ShapeGroup1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA5112D46F200C803AC /* ShapeGroup1.m */; };
+		F878DACF1220B40D00DF7522 /* Shape1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA7112D46F200C803AC /* Shape1.m */; };
+		F878DAD01220B40D00DF7522 /* GameState1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA9112D46F200C803AC /* GameState1.m */; };
+		F878DAD11220B40D00DF7522 /* Tetris1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FAB112D46F200C803AC /* Tetris1.m */; };
+		F878DAD21220B40D00DF7522 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B65E04112D4CA2007F1356 /* SplashViewController.m */; };
+		F878DAD31220B40D00DF7522 /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B65E22112D4E89007F1356 /* SoundEffect.m */; };
+		F878DAD51220B40D00DF7522 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		F878DAD61220B40D00DF7522 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		F878DAD71220B40D00DF7522 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		F878DAD81220B40D00DF7522 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B65E2B112D4EC0007F1356 /* AudioToolbox.framework */; };
+		F878DB191220B9A400DF7522 /* TetrisTests.octest in Resources */ = {isa = PBXBuildFile; fileRef = F878DB0A1220B56400DF7522 /* TetrisTests.octest */; };
+		F8A35FB1112D46F200C803AC /* TetrisViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F89112D46F200C803AC /* TetrisViewController1.m */; };
+		F8A35FB2112D46F200C803AC /* SettingsViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F8B112D46F200C803AC /* SettingsViewController1.m */; };
+		F8A35FB3112D46F200C803AC /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F8E112D46F200C803AC /* MainView.m */; };
+		F8A35FB6112D46F200C803AC /* SplashView1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F94112D46F200C803AC /* SplashView1.m */; };
+		F8A35FB7112D46F200C803AC /* SettingsView1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35F96112D46F200C803AC /* SettingsView1.m */; };
+		F8A35FBD112D46F200C803AC /* Board1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA3112D46F200C803AC /* Board1.m */; };
+		F8A35FBE112D46F200C803AC /* ShapeGroup1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA5112D46F200C803AC /* ShapeGroup1.m */; };
+		F8A35FBF112D46F200C803AC /* Shape1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA7112D46F200C803AC /* Shape1.m */; };
+		F8A35FC0112D46F200C803AC /* GameState1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FA9112D46F200C803AC /* GameState1.m */; };
+		F8A35FC1112D46F200C803AC /* Tetris1.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A35FAB112D46F200C803AC /* Tetris1.m */; };
+		F8B65E05112D4CA2007F1356 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B65E04112D4CA2007F1356 /* SplashViewController.m */; };
+		F8B65E23112D4E89007F1356 /* SoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B65E22112D4E89007F1356 /* SoundEffect.m */; };
+		F8B65E2C112D4EC0007F1356 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8B65E2B112D4EC0007F1356 /* AudioToolbox.framework */; };
+		F8B65E6C112D4F40007F1356 /* TetrisViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B65E6B112D4F40007F1356 /* TetrisViewController1.xib */; };
+		F8B65E7F112D518E007F1356 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B65E7E112D518E007F1356 /* SettingsView.xib */; };
+		F8B65E81112D51AC007F1356 /* SplashView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8B65E80112D51AC007F1356 /* SplashView.xib */; };
+		F8B65ED6112D543A007F1356 /* tileDefault_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBA112D543A007F1356 /* tileDefault_14x14.png */; };
+		F8B65ED7112D543A007F1356 /* tileGreen_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBB112D543A007F1356 /* tileGreen_14x14.png */; };
+		F8B65ED8112D543A007F1356 /* scratch1.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBC112D543A007F1356 /* scratch1.wav */; };
+		F8B65ED9112D543A007F1356 /* tileBlue_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBD112D543A007F1356 /* tileBlue_14x14.png */; };
+		F8B65EDA112D543A007F1356 /* arrow_up1_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBE112D543A007F1356 /* arrow_up1_50_30.png */; };
+		F8B65EDB112D543A007F1356 /* tileIron_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EBF112D543A007F1356 /* tileIron_25x25.png */; };
+		F8B65EDC112D543A007F1356 /* tileGreen_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC0112D543A007F1356 /* tileGreen_25x25.png */; };
+		F8B65EDD112D543A007F1356 /* tileCayenne_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC1112D543A007F1356 /* tileCayenne_14x14.png */; };
+		F8B65EDE112D543A007F1356 /* tilePlum_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC2112D543A007F1356 /* tilePlum_25x25.png */; };
+		F8B65EDF112D543A007F1356 /* tileLemon_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC3112D543A007F1356 /* tileLemon_25x25.png */; };
+		F8B65EE0112D543A007F1356 /* arrow_down_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC4112D543A007F1356 /* arrow_down_50_30.png */; };
+		F8B65EE1112D543A007F1356 /* tileDefault_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC5112D543A007F1356 /* tileDefault_25x25.png */; };
+		F8B65EE2112D543A007F1356 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC6112D543A007F1356 /* icon.png */; };
+		F8B65EE3112D543A007F1356 /* arrow_left1_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC7112D543A007F1356 /* arrow_left1_50_30.png */; };
+		F8B65EE4112D543A007F1356 /* arrow_left_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC8112D543A007F1356 /* arrow_left_50_30.png */; };
+		F8B65EE5112D543A007F1356 /* tileLemon_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65EC9112D543A007F1356 /* tileLemon_14x14.png */; };
+		F8B65EE6112D543A007F1356 /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECA112D543A007F1356 /* tap.aif */; };
+		F8B65EE7112D543A007F1356 /* arrow_right1_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECB112D543A007F1356 /* arrow_right1_50_30.png */; };
+		F8B65EE8112D543A007F1356 /* arrow_down1_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECC112D543A007F1356 /* arrow_down1_50_30.png */; };
+		F8B65EE9112D543A007F1356 /* tileSky_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECD112D543A007F1356 /* tileSky_25x25.png */; };
+		F8B65EEA112D543A007F1356 /* tilePlum_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECE112D543A007F1356 /* tilePlum_14x14.png */; };
+		F8B65EEB112D543A007F1356 /* arrow_right_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ECF112D543A007F1356 /* arrow_right_50_30.png */; };
+		F8B65EEC112D543A007F1356 /* tileSky_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED0112D543A007F1356 /* tileSky_14x14.png */; };
+		F8B65EED112D543A007F1356 /* tileCayenne_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED1112D543A007F1356 /* tileCayenne_25x25.png */; };
+		F8B65EEE112D543A007F1356 /* tileBlue_25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED2112D543A007F1356 /* tileBlue_25x25.png */; };
+		F8B65EEF112D543A007F1356 /* semi_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED3112D543A007F1356 /* semi_screen.png */; };
+		F8B65EF0112D543A007F1356 /* arrow_up_50_30.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED4112D543A007F1356 /* arrow_up_50_30.png */; };
+		F8B65EF1112D543A007F1356 /* tileIron_14x14.png in Resources */ = {isa = PBXBuildFile; fileRef = F8B65ED5112D543A007F1356 /* tileIron_14x14.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F878DB161220B98A00DF7522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F878DB091220B56400DF7522;
+			remoteInfo = TetrisTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* Tetris2AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tetris2AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* Tetris2AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tetris2AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Tetris2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetris2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Tetris2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tetris2_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Tetris2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tetris2-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		F86E0D7B1755E18C00EF667A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F878DA7D1220AD9500DF7522 /* TetrisUnitTestCases.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetrisUnitTestCases.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F878DA7E1220AD9500DF7522 /* TetrisUnitTestCases-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TetrisUnitTestCases-Info.plist"; sourceTree = "<group>"; };
+		F878DADC1220B40D00DF7522 /* Tetris2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tetris2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F878DADE1220B40D00DF7522 /* Tetris2-Info copy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tetris2-Info copy.plist"; sourceTree = "<group>"; };
+		F878DB0A1220B56400DF7522 /* TetrisTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetrisTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F878DB0B1220B56400DF7522 /* TetrisTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TetrisTests-Info.plist"; sourceTree = "<group>"; };
+		F8A35F88112D46F200C803AC /* TetrisViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TetrisViewController1.h; sourceTree = "<group>"; };
+		F8A35F89112D46F200C803AC /* TetrisViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TetrisViewController1.m; sourceTree = "<group>"; };
+		F8A35F8A112D46F200C803AC /* SettingsViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController1.h; sourceTree = "<group>"; };
+		F8A35F8B112D46F200C803AC /* SettingsViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController1.m; sourceTree = "<group>"; };
+		F8A35F8D112D46F200C803AC /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		F8A35F8E112D46F200C803AC /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		F8A35F93112D46F200C803AC /* SplashView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashView1.h; sourceTree = "<group>"; };
+		F8A35F94112D46F200C803AC /* SplashView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashView1.m; sourceTree = "<group>"; };
+		F8A35F95112D46F200C803AC /* SettingsView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView1.h; sourceTree = "<group>"; };
+		F8A35F96112D46F200C803AC /* SettingsView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView1.m; sourceTree = "<group>"; };
+		F8A35FA2112D46F200C803AC /* Board1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board1.h; sourceTree = "<group>"; };
+		F8A35FA3112D46F200C803AC /* Board1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board1.m; sourceTree = "<group>"; };
+		F8A35FA4112D46F200C803AC /* ShapeGroup1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeGroup1.h; sourceTree = "<group>"; };
+		F8A35FA5112D46F200C803AC /* ShapeGroup1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeGroup1.m; sourceTree = "<group>"; };
+		F8A35FA6112D46F200C803AC /* Shape1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shape1.h; sourceTree = "<group>"; };
+		F8A35FA7112D46F200C803AC /* Shape1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shape1.m; sourceTree = "<group>"; };
+		F8A35FA8112D46F200C803AC /* GameState1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState1.h; sourceTree = "<group>"; };
+		F8A35FA9112D46F200C803AC /* GameState1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameState1.m; sourceTree = "<group>"; };
+		F8A35FAA112D46F200C803AC /* Tetris1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tetris1.h; sourceTree = "<group>"; };
+		F8A35FAB112D46F200C803AC /* Tetris1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tetris1.m; sourceTree = "<group>"; };
+		F8B65E03112D4CA2007F1356 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		F8B65E04112D4CA2007F1356 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
+		F8B65E21112D4E89007F1356 /* SoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEffect.h; sourceTree = "<group>"; };
+		F8B65E22112D4E89007F1356 /* SoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundEffect.m; sourceTree = "<group>"; };
+		F8B65E2B112D4EC0007F1356 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F8B65E6B112D4F40007F1356 /* TetrisViewController1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TetrisViewController1.xib; sourceTree = "<group>"; };
+		F8B65E7E112D518E007F1356 /* SettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		F8B65E80112D51AC007F1356 /* SplashView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashView.xib; sourceTree = "<group>"; };
+		F8B65EBA112D543A007F1356 /* tileDefault_14x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileDefault_14x14.png; sourceTree = "<group>"; };
+		F8B65EBB112D543A007F1356 /* tileGreen_14x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileGreen_14x14.png; sourceTree = "<group>"; };
+		F8B65EBC112D543A007F1356 /* scratch1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = scratch1.wav; sourceTree = "<group>"; };
+		F8B65EBD112D543A007F1356 /* tileBlue_14x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileBlue_14x14.png; sourceTree = "<group>"; };
+		F8B65EBE112D543A007F1356 /* arrow_up1_50_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_up1_50_30.png; sourceTree = "<group>"; };
+		F8B65EBF112D543A007F1356 /* tileIron_25x25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileIron_25x25.png; sourceTree = "<group>"; };
+		F8B65EC0112D543A007F1356 /* tileGreen_25x25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileGreen_25x25.png; sourceTree = "<group>"; };
+		F8B65EC1112D543A007F1356 /* tileCayenne_14x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileCayenne_14x14.png; sourceTree = "<group>"; };
+		F8B65EC2112D543A007F1356 /* tilePlum_25x25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilePlum_25x25.png; sourceTree = "<group>"; };
+		F8B65EC3112D543A007F1356 /* tileLemon_25x25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileLemon_25x25.png; sourceTree = "<group>"; };
+		F8B65EC4112D543A007F1356 /* arrow_down_50_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down_50_30.png; sourceTree = "<group>"; };
+		F8B65EC5112D543A007F1356 /* tileDefault_25x25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileDefault_25x25.png; sourceTree = "<group>"; };
+		F8B65EC6112D543A007F1356 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		F8B65EC7112D543A007F1356 /* arrow_left1_50_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_left1_50_30.png; sourceTree = "<group>"; };
+		F8B65EC8112D543A007F1356 /* arrow_left_50_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_left_50_30.png; sourceTree = "<group>"; };
+		F8B65EC9112D543A007F1356 /* tileLemon_14x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileLemon_14x14.png; sourceTree = "<group>"; };
+		F8B65ECA112D543A007F1356 /* tap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tap.aif; sourceTree = "<group>"; };
+		F8B65ECB112D543A007F1356 /* arrow_right1_50_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right1_50_30.png; sourceTree = "<group>"; };
+		F8B65ECC112D543A007F1356 /* arrow_down1_50_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down1_50_30.png; sourceTree = "<group>"; };
+		F8B65ECD112D543A007F1356 /* tileSky_25x25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileSky_25x25.png; sourceTree = "<group>"; };
+		F8B65ECE112D543A007F1356 /* tilePlum_14x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tilePlum_14x14.png; sourceTree = "<group>"; };
+		F8B65ECF112D543A007F1356 /* arrow_right_50_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_right_50_30.png; sourceTree = "<group>"; };
+		F8B65ED0112D543A007F1356 /* tileSky_14x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileSky_14x14.png; sourceTree = "<group>"; };
+		F8B65ED1112D543A007F1356 /* tileCayenne_25x25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileCayenne_25x25.png; sourceTree = "<group>"; };
+		F8B65ED2112D543A007F1356 /* tileBlue_25x25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileBlue_25x25.png; sourceTree = "<group>"; };
+		F8B65ED3112D543A007F1356 /* semi_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = semi_screen.png; sourceTree = "<group>"; };
+		F8B65ED4112D543A007F1356 /* arrow_up_50_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_up_50_30.png; sourceTree = "<group>"; };
+		F8B65ED5112D543A007F1356 /* tileIron_14x14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tileIron_14x14.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				F8B65E2C112D4EC0007F1356 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DA7A1220AD9500DF7522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DAD41220B40D00DF7522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F878DAD51220B40D00DF7522 /* Foundation.framework in Frameworks */,
+				F878DAD61220B40D00DF7522 /* UIKit.framework in Frameworks */,
+				F878DAD71220B40D00DF7522 /* CoreGraphics.framework in Frameworks */,
+				F878DAD81220B40D00DF7522 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DB071220B56400DF7522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F8B65DD9112D49F5007F1356 /* Delegates */,
+				F8A35F81112D46F200C803AC /* ViewControllers */,
+				F8A35F8C112D46F200C803AC /* Views */,
+				F8A35F97112D46F200C803AC /* Model */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Tetris2.app */,
+				F878DA7D1220AD9500DF7522 /* TetrisUnitTestCases.octest */,
+				F878DADC1220B40D00DF7522 /* Tetris2.app */,
+				F878DB0A1220B56400DF7522 /* TetrisTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				F86E0D7B1755E18C00EF667A /* Default-568h@2x.png */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				F8B65E6B112D4F40007F1356 /* TetrisViewController1.xib */,
+				F8B65E7E112D518E007F1356 /* SettingsView.xib */,
+				F8B65E80112D51AC007F1356 /* SplashView.xib */,
+				F878DA7E1220AD9500DF7522 /* TetrisUnitTestCases-Info.plist */,
+				F878DB0B1220B56400DF7522 /* TetrisTests-Info.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F8B65E21112D4E89007F1356 /* SoundEffect.h */,
+				F8B65E22112D4E89007F1356 /* SoundEffect.m */,
+				32CA4F630368D1EE00C91783 /* Tetris2_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8B65EB6112D53F6007F1356 /* Audio */,
+				F8B65EB5112D53F0007F1356 /* Images */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Tetris2-Info.plist */,
+				F878DADE1220B40D00DF7522 /* Tetris2-Info copy.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8B65E2B112D4EC0007F1356 /* AudioToolbox.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8A35F81112D46F200C803AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8B65E03112D4CA2007F1356 /* SplashViewController.h */,
+				F8B65E04112D4CA2007F1356 /* SplashViewController.m */,
+				F8A35F88112D46F200C803AC /* TetrisViewController1.h */,
+				F8A35F89112D46F200C803AC /* TetrisViewController1.m */,
+				F8A35F8A112D46F200C803AC /* SettingsViewController1.h */,
+				F8A35F8B112D46F200C803AC /* SettingsViewController1.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F8A35F8C112D46F200C803AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8A35F8D112D46F200C803AC /* MainView.h */,
+				F8A35F8E112D46F200C803AC /* MainView.m */,
+				F8A35F93112D46F200C803AC /* SplashView1.h */,
+				F8A35F94112D46F200C803AC /* SplashView1.m */,
+				F8A35F95112D46F200C803AC /* SettingsView1.h */,
+				F8A35F96112D46F200C803AC /* SettingsView1.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F8A35F97112D46F200C803AC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8A35FA2112D46F200C803AC /* Board1.h */,
+				F8A35FA3112D46F200C803AC /* Board1.m */,
+				F8A35FA4112D46F200C803AC /* ShapeGroup1.h */,
+				F8A35FA5112D46F200C803AC /* ShapeGroup1.m */,
+				F8A35FA6112D46F200C803AC /* Shape1.h */,
+				F8A35FA7112D46F200C803AC /* Shape1.m */,
+				F8A35FA8112D46F200C803AC /* GameState1.h */,
+				F8A35FA9112D46F200C803AC /* GameState1.m */,
+				F8A35FAA112D46F200C803AC /* Tetris1.h */,
+				F8A35FAB112D46F200C803AC /* Tetris1.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F8B65DD9112D49F5007F1356 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* Tetris2AppDelegate.h */,
+				1D3623250D0F684500981E51 /* Tetris2AppDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		F8B65EB5112D53F0007F1356 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F8B65EBA112D543A007F1356 /* tileDefault_14x14.png */,
+				F8B65EBB112D543A007F1356 /* tileGreen_14x14.png */,
+				F8B65EBD112D543A007F1356 /* tileBlue_14x14.png */,
+				F8B65EBE112D543A007F1356 /* arrow_up1_50_30.png */,
+				F8B65EBF112D543A007F1356 /* tileIron_25x25.png */,
+				F8B65EC0112D543A007F1356 /* tileGreen_25x25.png */,
+				F8B65EC1112D543A007F1356 /* tileCayenne_14x14.png */,
+				F8B65EC2112D543A007F1356 /* tilePlum_25x25.png */,
+				F8B65EC3112D543A007F1356 /* tileLemon_25x25.png */,
+				F8B65EC4112D543A007F1356 /* arrow_down_50_30.png */,
+				F8B65EC5112D543A007F1356 /* tileDefault_25x25.png */,
+				F8B65EC6112D543A007F1356 /* icon.png */,
+				F8B65EC7112D543A007F1356 /* arrow_left1_50_30.png */,
+				F8B65EC8112D543A007F1356 /* arrow_left_50_30.png */,
+				F8B65EC9112D543A007F1356 /* tileLemon_14x14.png */,
+				F8B65ECB112D543A007F1356 /* arrow_right1_50_30.png */,
+				F8B65ECC112D543A007F1356 /* arrow_down1_50_30.png */,
+				F8B65ECD112D543A007F1356 /* tileSky_25x25.png */,
+				F8B65ECE112D543A007F1356 /* tilePlum_14x14.png */,
+				F8B65ECF112D543A007F1356 /* arrow_right_50_30.png */,
+				F8B65ED0112D543A007F1356 /* tileSky_14x14.png */,
+				F8B65ED1112D543A007F1356 /* tileCayenne_25x25.png */,
+				F8B65ED2112D543A007F1356 /* tileBlue_25x25.png */,
+				F8B65ED3112D543A007F1356 /* semi_screen.png */,
+				F8B65ED4112D543A007F1356 /* arrow_up_50_30.png */,
+				F8B65ED5112D543A007F1356 /* tileIron_14x14.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F8B65EB6112D53F6007F1356 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				F8B65EBC112D543A007F1356 /* scratch1.wav */,
+				F8B65ECA112D543A007F1356 /* tap.aif */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Tetris2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Tetris2" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tetris2;
+			productName = Tetris2;
+			productReference = 1D6058910D05DD3D006BFB54 /* Tetris2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F878DA7C1220AD9500DF7522 /* TetrisLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F878DA811220AD9600DF7522 /* Build configuration list for PBXNativeTarget "TetrisLogicTests" */;
+			buildPhases = (
+				F878DA781220AD9500DF7522 /* Resources */,
+				F878DA791220AD9500DF7522 /* Sources */,
+				F878DA7A1220AD9500DF7522 /* Frameworks */,
+				F878DA7B1220AD9500DF7522 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TetrisLogicTests;
+			productName = TetrisUnitTestCases;
+			productReference = F878DA7D1220AD9500DF7522 /* TetrisUnitTestCases.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F878DAA31220B40D00DF7522 /* TetrisTesting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F878DAD91220B40D00DF7522 /* Build configuration list for PBXNativeTarget "TetrisTesting" */;
+			buildPhases = (
+				F878DAA41220B40D00DF7522 /* Resources */,
+				F878DAC51220B40D00DF7522 /* Sources */,
+				F878DAD41220B40D00DF7522 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F878DB171220B98A00DF7522 /* PBXTargetDependency */,
+			);
+			name = TetrisTesting;
+			productName = Tetris2;
+			productReference = F878DADC1220B40D00DF7522 /* Tetris2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F878DB091220B56400DF7522 /* TetrisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F878DB0E1220B56400DF7522 /* Build configuration list for PBXNativeTarget "TetrisTests" */;
+			buildPhases = (
+				F878DB051220B56400DF7522 /* Resources */,
+				F878DB061220B56400DF7522 /* Sources */,
+				F878DB071220B56400DF7522 /* Frameworks */,
+				F878DB081220B56400DF7522 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TetrisTests;
+			productName = TetrisTests;
+			productReference = F878DB0A1220B56400DF7522 /* TetrisTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tetris2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Tetris2 */,
+				F878DA7C1220AD9500DF7522 /* TetrisLogicTests */,
+				F878DAA31220B40D00DF7522 /* TetrisTesting */,
+				F878DB091220B56400DF7522 /* TetrisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				F8B65E6C112D4F40007F1356 /* TetrisViewController1.xib in Resources */,
+				F8B65E7F112D518E007F1356 /* SettingsView.xib in Resources */,
+				F8B65E81112D51AC007F1356 /* SplashView.xib in Resources */,
+				F8B65ED6112D543A007F1356 /* tileDefault_14x14.png in Resources */,
+				F8B65ED7112D543A007F1356 /* tileGreen_14x14.png in Resources */,
+				F8B65ED8112D543A007F1356 /* scratch1.wav in Resources */,
+				F8B65ED9112D543A007F1356 /* tileBlue_14x14.png in Resources */,
+				F8B65EDA112D543A007F1356 /* arrow_up1_50_30.png in Resources */,
+				F8B65EDB112D543A007F1356 /* tileIron_25x25.png in Resources */,
+				F8B65EDC112D543A007F1356 /* tileGreen_25x25.png in Resources */,
+				F8B65EDD112D543A007F1356 /* tileCayenne_14x14.png in Resources */,
+				F8B65EDE112D543A007F1356 /* tilePlum_25x25.png in Resources */,
+				F8B65EDF112D543A007F1356 /* tileLemon_25x25.png in Resources */,
+				F8B65EE0112D543A007F1356 /* arrow_down_50_30.png in Resources */,
+				F8B65EE1112D543A007F1356 /* tileDefault_25x25.png in Resources */,
+				F8B65EE2112D543A007F1356 /* icon.png in Resources */,
+				F8B65EE3112D543A007F1356 /* arrow_left1_50_30.png in Resources */,
+				F8B65EE4112D543A007F1356 /* arrow_left_50_30.png in Resources */,
+				F8B65EE5112D543A007F1356 /* tileLemon_14x14.png in Resources */,
+				F8B65EE6112D543A007F1356 /* tap.aif in Resources */,
+				F8B65EE7112D543A007F1356 /* arrow_right1_50_30.png in Resources */,
+				F8B65EE8112D543A007F1356 /* arrow_down1_50_30.png in Resources */,
+				F8B65EE9112D543A007F1356 /* tileSky_25x25.png in Resources */,
+				F8B65EEA112D543A007F1356 /* tilePlum_14x14.png in Resources */,
+				F8B65EEB112D543A007F1356 /* arrow_right_50_30.png in Resources */,
+				F8B65EEC112D543A007F1356 /* tileSky_14x14.png in Resources */,
+				F8B65EED112D543A007F1356 /* tileCayenne_25x25.png in Resources */,
+				F8B65EEE112D543A007F1356 /* tileBlue_25x25.png in Resources */,
+				F8B65EEF112D543A007F1356 /* semi_screen.png in Resources */,
+				F8B65EF0112D543A007F1356 /* arrow_up_50_30.png in Resources */,
+				F8B65EF1112D543A007F1356 /* tileIron_14x14.png in Resources */,
+				F86E0D7C1755E18C00EF667A /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DA781220AD9500DF7522 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DAA41220B40D00DF7522 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F878DB191220B9A400DF7522 /* TetrisTests.octest in Resources */,
+				F878DAA51220B40D00DF7522 /* MainWindow.xib in Resources */,
+				F878DAA61220B40D00DF7522 /* TetrisViewController1.xib in Resources */,
+				F878DAA71220B40D00DF7522 /* SettingsView.xib in Resources */,
+				F878DAA81220B40D00DF7522 /* SplashView.xib in Resources */,
+				F878DAA91220B40D00DF7522 /* tileDefault_14x14.png in Resources */,
+				F878DAAA1220B40D00DF7522 /* tileGreen_14x14.png in Resources */,
+				F878DAAB1220B40D00DF7522 /* scratch1.wav in Resources */,
+				F878DAAC1220B40D00DF7522 /* tileBlue_14x14.png in Resources */,
+				F878DAAD1220B40D00DF7522 /* arrow_up1_50_30.png in Resources */,
+				F878DAAE1220B40D00DF7522 /* tileIron_25x25.png in Resources */,
+				F878DAAF1220B40D00DF7522 /* tileGreen_25x25.png in Resources */,
+				F878DAB01220B40D00DF7522 /* tileCayenne_14x14.png in Resources */,
+				F878DAB11220B40D00DF7522 /* tilePlum_25x25.png in Resources */,
+				F878DAB21220B40D00DF7522 /* tileLemon_25x25.png in Resources */,
+				F878DAB31220B40D00DF7522 /* arrow_down_50_30.png in Resources */,
+				F878DAB41220B40D00DF7522 /* tileDefault_25x25.png in Resources */,
+				F878DAB51220B40D00DF7522 /* icon.png in Resources */,
+				F878DAB61220B40D00DF7522 /* arrow_left1_50_30.png in Resources */,
+				F878DAB71220B40D00DF7522 /* arrow_left_50_30.png in Resources */,
+				F878DAB81220B40D00DF7522 /* tileLemon_14x14.png in Resources */,
+				F878DAB91220B40D00DF7522 /* tap.aif in Resources */,
+				F878DABA1220B40D00DF7522 /* arrow_right1_50_30.png in Resources */,
+				F878DABB1220B40D00DF7522 /* arrow_down1_50_30.png in Resources */,
+				F878DABC1220B40D00DF7522 /* tileSky_25x25.png in Resources */,
+				F878DABD1220B40D00DF7522 /* tilePlum_14x14.png in Resources */,
+				F878DABE1220B40D00DF7522 /* arrow_right_50_30.png in Resources */,
+				F878DABF1220B40D00DF7522 /* tileSky_14x14.png in Resources */,
+				F878DAC01220B40D00DF7522 /* tileCayenne_25x25.png in Resources */,
+				F878DAC11220B40D00DF7522 /* tileBlue_25x25.png in Resources */,
+				F878DAC21220B40D00DF7522 /* semi_screen.png in Resources */,
+				F878DAC31220B40D00DF7522 /* arrow_up_50_30.png in Resources */,
+				F878DAC41220B40D00DF7522 /* tileIron_14x14.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DB051220B56400DF7522 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F878DA7B1220AD9500DF7522 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		F878DB081220B56400DF7522 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* Tetris2AppDelegate.m in Sources */,
+				F8A35FB1112D46F200C803AC /* TetrisViewController1.m in Sources */,
+				F8A35FB2112D46F200C803AC /* SettingsViewController1.m in Sources */,
+				F8A35FB3112D46F200C803AC /* MainView.m in Sources */,
+				F8A35FB6112D46F200C803AC /* SplashView1.m in Sources */,
+				F8A35FB7112D46F200C803AC /* SettingsView1.m in Sources */,
+				F8A35FBD112D46F200C803AC /* Board1.m in Sources */,
+				F8A35FBE112D46F200C803AC /* ShapeGroup1.m in Sources */,
+				F8A35FBF112D46F200C803AC /* Shape1.m in Sources */,
+				F8A35FC0112D46F200C803AC /* GameState1.m in Sources */,
+				F8A35FC1112D46F200C803AC /* Tetris1.m in Sources */,
+				F8B65E05112D4CA2007F1356 /* SplashViewController.m in Sources */,
+				F8B65E23112D4E89007F1356 /* SoundEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DA791220AD9500DF7522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F878692E12220334009681B2 /* Tetris1.m in Sources */,
+				F878693B1222048B009681B2 /* ShapeGroup1.m in Sources */,
+				F878693E1222049B009681B2 /* Shape1.m in Sources */,
+				F8786940122204A3009681B2 /* GameState1.m in Sources */,
+				F8786942122204B3009681B2 /* Board1.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DAC51220B40D00DF7522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F878DAC61220B40D00DF7522 /* main.m in Sources */,
+				F878DAC71220B40D00DF7522 /* Tetris2AppDelegate.m in Sources */,
+				F878DAC81220B40D00DF7522 /* TetrisViewController1.m in Sources */,
+				F878DAC91220B40D00DF7522 /* SettingsViewController1.m in Sources */,
+				F878DACA1220B40D00DF7522 /* MainView.m in Sources */,
+				F878DACB1220B40D00DF7522 /* SplashView1.m in Sources */,
+				F878DACC1220B40D00DF7522 /* SettingsView1.m in Sources */,
+				F878DACD1220B40D00DF7522 /* Board1.m in Sources */,
+				F878DACE1220B40D00DF7522 /* ShapeGroup1.m in Sources */,
+				F878DACF1220B40D00DF7522 /* Shape1.m in Sources */,
+				F878DAD01220B40D00DF7522 /* GameState1.m in Sources */,
+				F878DAD11220B40D00DF7522 /* Tetris1.m in Sources */,
+				F878DAD21220B40D00DF7522 /* SplashViewController.m in Sources */,
+				F878DAD31220B40D00DF7522 /* SoundEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F878DB061220B56400DF7522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F878DB171220B98A00DF7522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F878DB091220B56400DF7522 /* TetrisTests */;
+			targetProxy = F878DB161220B98A00DF7522 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tetris2_Prefix.pch;
+				INFOPLIST_FILE = "Tetris2-Info.plist";
+				PRODUCT_NAME = Tetris2;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tetris2_Prefix.pch;
+				INFOPLIST_FILE = "Tetris2-Info.plist";
+				PRODUCT_NAME = Tetris2;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		F878DA7F1220AD9500DF7522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "TetrisUnitTestCases-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = TetrisUnitTestCases;
+				SDKROOT = iphonesimulator3.1.2;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F878DA801220AD9500DF7522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "TetrisUnitTestCases-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = TetrisUnitTestCases;
+				SDKROOT = iphonesimulator3.1.2;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		F878DADA1220B40D00DF7522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tetris2_Prefix.pch;
+				INFOPLIST_FILE = "/Users/Harshal/Documents/iPhone_apps/Tetris2/Tetris2-Info copy.plist";
+				PRODUCT_NAME = Tetris2;
+			};
+			name = Debug;
+		};
+		F878DADB1220B40D00DF7522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Tetris2_Prefix.pch;
+				INFOPLIST_FILE = "/Users/Harshal/Documents/iPhone_apps/Tetris2/Tetris2-Info copy.plist";
+				PRODUCT_NAME = Tetris2;
+			};
+			name = Release;
+		};
+		F878DB0C1220B56400DF7522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = "TetrisTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = TetrisTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F878DB0D1220B56400DF7522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				INFOPLIST_FILE = "TetrisTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					SenTestingKit,
+					"-framework",
+					UIKit,
+				);
+				PRODUCT_NAME = TetrisTests;
+				WRAPPER_EXTENSION = octest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Tetris2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Tetris2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F878DA811220AD9600DF7522 /* Build configuration list for PBXNativeTarget "TetrisLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F878DA7F1220AD9500DF7522 /* Debug */,
+				F878DA801220AD9500DF7522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F878DAD91220B40D00DF7522 /* Build configuration list for PBXNativeTarget "TetrisTesting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F878DADA1220B40D00DF7522 /* Debug */,
+				F878DADB1220B40D00DF7522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F878DB0E1220B56400DF7522 /* Build configuration list for PBXNativeTarget "TetrisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F878DB0C1220B56400DF7522 /* Debug */,
+				F878DB0D1220B56400DF7522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
